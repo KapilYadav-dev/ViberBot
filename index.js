@@ -1,6 +1,6 @@
 const { Telegraf } = require('telegraf')
 const scrape=require('./scrape')
-const bot = new Telegraf('1647124224:AAF8QXL_pQ8dhU6jZCnMR7o_j2T3romjlN4')
+const bot = new Telegraf('YOUR_BOT_TOKEN')
 bot.start((ctx) => ctx.reply(`Welcome ${ctx.from.first_name} to Vibber. Here you can get direct youtube video download link...\nJust tell me the link of that video😉`))
 bot.on('text', (ctx) => {
     var url=ctx.message.text
